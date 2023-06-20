@@ -1,0 +1,13 @@
+{% macro photo(s, f) %}
+<div class="type1">			
+    {% set start = namespace(value=s) %}
+    {% set stop = namespace(value=f) %}
+    {% set count = namespace(value=0) %}
+    {% for i in image %}
+    {% set count.value = count.value + 1 %}
+    {% if (count.value >= start.value) and (count.value <= stop.value)  %}
+        <img src="data:;base64,{{ i }}" alt="140x140" srcset="" class="img4x4" id="{{ count.value }}">
+    {% endif %}
+    {% endfor %}
+</div>
+{% endmacro %}

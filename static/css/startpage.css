@@ -1,0 +1,471 @@
+                                /* block one */
+.art1, .art2, .art3, .content {
+    display: grid;
+    box-sizing: border-box;
+    padding-top: 10px;
+    width: 95%;
+    height: 100%;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleaArt{
+    padding-top: 5px;
+}
+
+.textFount {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+}
+
+.video1 {
+    border-radius: 10px;
+    height: 640px;
+    width: 70%;
+}
+
+                                /* block two */
+.art2 {
+    display: grid;
+    width: 80%;
+    grid-template-columns:  1fr;
+}
+
+.sizePicture{
+    border-radius: 100%;
+    border: black solid 2px;
+    width: 140px;
+    height: 140px;
+}
+
+.infoText, .infoTex, .infTex, .infTexs{
+    width: 100%; 
+    margin: 5px 0 0 0;
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+}
+
+.infoTex{
+    padding-top: 15%;
+}
+
+.leadershipInfo
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+   
+}
+
+.leadership, .leadership_1, .leadership_2
+{
+    display: grid;
+    width: 380px;
+    border-radius: 10px;
+    height: 400px;
+    padding-top: 3.5%;
+}
+
+.leadership
+{
+    display: grid;
+    grid-column: 1; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leadership_1
+{
+    display: grid;
+    grid-column: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leadership_2
+{
+    display: grid;
+    grid-column: 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.addInfo {
+    position: relative;
+    width: 90%;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E6E6E6;
+}
+
+.infTex{
+    font-size: 16pt;
+    left: 2.5%;
+    bottom: 65%;
+    width: 40%;
+    height: 30%;
+}
+
+.picture
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.infoText, .infoTex
+{
+    text-align: center;
+}
+
+                            /* block three */
+.art3 {
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    padding-top: 2%;
+}
+
+.forms {
+    display: grid;
+    padding-left: 4%;
+    width: 100%;
+    height: 100%;
+}
+
+.divMap{
+    display: grid;
+    grid-column: 2/8;
+    padding-right: 3%;
+    width: 100%;
+    height: 727px;
+}
+
+iframe
+{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.infTexs{
+    display: grid;
+    font-size: 17px;
+    width: 100%;
+    height: 100%;
+}
+
+                        /* adeptic */
+@media (min-width: 1300px) and (max-width: 1600px)
+{
+    .infoText, .infoTex, .infTex, .infTexs{
+        width: 100%; 
+        margin: 5px 0 0 0;
+        font-size: 12pt;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .sizePicture
+    {
+        border-radius: 100%;
+        border: black solid 2px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .leadership, .leadership_1, .leadership_2
+    {
+        display: grid;
+        width: 380px;
+        border-radius: 10px;
+        height: 380px;
+        padding-top: 3.5%;
+    }
+
+    .addInfo 
+    {
+        position: relative;
+        width: 80%;
+        height: 140px;
+        border-radius: 10px;
+        background-color: #E6E6E6;
+    }
+    
+
+    .video1 
+    {
+        border-radius: 10px;
+        height: 500px;
+        width: 80%;
+    }
+}
+                        /* 1460 */
+@media (max-width: 1460px)
+{
+    .infoText, .infoTex, .infTex, .infTexs{
+        width: 100%; 
+        margin: 5px 0 0 0;
+        font-size: 12pt;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .sizePicture
+    {
+        border-radius: 100%;
+        border: black solid 2px;
+        width: 110px;
+        height: 110px;
+    }
+    
+    .leadership, .leadership_1, .leadership_2
+    {
+        display: grid;
+        width: 380px;
+        border-radius: 10px;
+        height: 380px;
+        padding-top: 3.5%;
+    }
+
+    .leadership_2
+    {
+        display: grid;
+        grid-column: 1/4;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leadership
+    {
+        display: grid;
+        grid-column: 1;
+        grid-column: 2.5; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .leadership_1
+    {
+        display: grid;
+        grid-column: 2;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .leadershipInfo
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+    
+    }
+
+}
+                        /* 1290 */
+@media (max-width: 1290px) 
+{
+    .video1 
+    {
+        border-radius: 10px;
+        height: 640px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 1140px)
+{
+    .video1 
+    {
+        border-radius: 10px;
+        height: 440px;
+        width: 90%;
+    }
+
+    .art1, .art2, .art3, .content {
+        width: 95%;
+    }
+    
+    .textFount {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14pt;
+
+    }
+
+    .art3 {
+        display: grid;
+        grid-template-columns:  1fr;
+        padding-top: 2%;
+    }
+
+    .forms {
+        display: grid;
+        padding-left: 4%;
+        width: 95%;
+        height: 100%;
+    }
+    
+    .divMap{
+        display: grid;
+        grid-column: 1/4;
+        padding-left: 2%;
+        width: 100%;
+        align-items: center;
+        height: 450px;
+    }
+    
+    .infTexs{
+        display: grid;
+        font-size: 17px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 800px)
+{
+    .art2 {
+        width: 70%;
+    }
+
+    .infoText{
+        width: 80%; 
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 12pt;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .sizePicture
+    {
+        border-radius: 100%;
+        border: black solid 2px;
+        width: 110px;
+        height: 110px;
+    }
+    
+    .leadership, .leadership_1, .leadership_2
+    {
+        display: grid;
+        width: 380px;
+        height: 380px;
+        grid-column: 1/4;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .leadership_1, .leadership
+    {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-radius: 0%;
+        border-bottom-color: rgb(109, 109, 109);  
+    }
+
+    .leadershipInfo
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 0px;
+    
+    }
+
+    .addInfo {
+        position: relative;
+        width: 60%;
+        height: 90px;
+
+    }
+}
+
+@media (min-width: 240px) and (max-width: 700px)
+{
+    .art2
+    {
+        grid-row-gap: 10px;
+    }
+    .video1 
+    {
+        border-radius: 10px;
+        height: 340px;
+        width: 90%;
+    }
+
+    .leadership, .leadership_1, .leadership_2
+    {
+        width: 280px;
+        height: 280px;
+        margin-top: 10px;
+    }
+
+    .addInfo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .divMap{
+        padding-left: 2%;
+        width: 100%;
+        height: 350px;
+    }
+
+    .infTexs{
+        font-size: 15px;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 500px)
+{
+    .video1 
+    {
+        height: 240px;
+    }
+
+}
+
+@media (min-width: 240px) and (max-width: 400px)
+{
+    .video1 
+    {
+        height: 220px;
+    }
+
+    .leadership, .leadership_1, .leadership_2
+    {
+        width: 220px;
+        height: 310px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (width: 320px){
+    .art2
+    {
+        width: 80%;
+    }
+
+    .video1 
+    {
+        height: 190px;
+    }
+
+    .infTexs{
+        font-size: 12px;
+    }
+
+    .divMap{
+        padding-left: 2%;
+        width: 100%;
+        height: 320px;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/authAdmin.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Аунтитефікація Адміна</title>
+</head>
+<body>
+    <div class="decoreElem"></div>
+    <div class="decoreElem1"></div>
+    <div class="decoreElem2"></div>
+    <div class="decoreElem3"></div>
+    <div class="authAdmin">
+        <p class="userDefinitionsP">Admin</p>
+        <form action="" class="userDefinition" method="GET">
+            <input type="email" class="userDefinitions" placeholder="Email">
+            <input type="password" class="userDefinitions" placeholder="Password">
+            <a href="/userDefinitions/AdminControlPanel"><button class="submit" type="button">submit</button></a>
+            <a href="/"><button class="return" type="button">return </button></a>
+        </form>
+    </div>
+
+</body>
+</html>

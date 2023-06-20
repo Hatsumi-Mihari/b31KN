@@ -1,0 +1,94 @@
+{% block menu %}
+
+<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+<header class="header"> 
+    {% block menuBurger %}
+    <div class="burger-menu">
+        <a href="#" class="burger-menu__btn">
+            <span class="burger-menu__lines"></span>
+            </a>
+        <div class="ulShow"></div>    
+        <nav class="burger-menu__nav">
+            <li class="menuLI"><a href="/" class="textMenu">Домашня</a>
+            </li>  
+            <ul class="Menu">
+                {% set count = namespace(value=-1) %}
+                {% for el in menuData %}
+                    {% set count.value = count.value + 1 %}
+                    {% if el.link == '/news' %}
+                    <li class="menuLI" id='hidenMenu{{ count.value }}'><a href="#" class="textMenu">{{ el.name }}</a>
+                        
+                        <ul class="subMain{{ count.value }}">
+                        <li class="menuLI"><a href="/news" class="textMenu">news</a></li> 
+                    {% endif %} 
+                    {% if el.link != '/news' %}
+                    <li class="menuLI" id='hidenMenu{{ count.value }}'><a href="{{el.link}}" class="textMenu">{{ el.name }}</a>
+                        
+                        <ul class="subMain{{ count.value }}">
+                    {% endif %} 
+                            {% for el1 in menuData2 %}
+                            {% if el.name == 'news' %}
+                            <li class="menuLI"><a href="{{idN[count.value]}}" class="textMenu">{{ el1.name }}</a></li> 
+                            {% set count.value = count.value + 1 %}
+                            {% endif %} 
+                            {% if el.name != 'news' %}
+                            <li class="menuLI"><a href="/content/{{el1.id}}" class="textMenu">{{ el1.name }}</a></li>  
+                            {% endif %}       
+                            {% endfor %}
+                        </ul>
+                    </li>      
+                {% endfor %}
+  
+                <li class="menuLI"><a href="#" class="textMenu">Додаткові сторінки</a>
+                    <ul class="subMain">
+                        <li class="menuLI"><a href="/userDefinitions" class="textMenu">Admin</a></li>
+                    </ul>
+                </li>      
+            </ul>   
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}" type="text/javascript"></script>
+
+    {% endblock %}
+    <nav class="blockMenu">
+        <ul class="Menu">
+            <li class="menuLI"><a href="/" class="textMenu">Домашня</a>
+            </li>  
+        {% set count = namespace(value=0) %}
+        {% for el in menuData %}
+            <li class="menuLI"><a href="{{el.link}}" class="textMenu">{{ el.name }}</a>
+                <ul class="subMain"> 
+                    {% for el1 in menuData2 %}
+                        {% if el1.idMenu == el.id %}
+                            {% if el.name == 'news' %}
+                            <li class="menuLI"><a href="{{idN[count.value]}}" class="textMenu">{{ el1.name }}</a></li> 
+                            {% set count.value = count.value + 1 %}
+                            {% endif %} 
+                            {% if el.name != 'news' %}
+                            <li class="menuLI"><a href="/content/{{el1.id}}" class="textMenu">{{ el1.name }}</a></li>  
+                            {% endif %} 
+                        {% endif %}       
+                    {% endfor %}
+                </ul>
+            </li>         
+        {% endfor %}   
+        <li class="menuLI"><a href="#" class="textMenu">Додаткові сторінки</a>
+            <ul class="subMain">
+                <li class="menuLI"><a href="/userDefinitions" class="textMenu">Admin</a></li>
+            </ul>
+        </li> 
+        </ul>   
+    </nav>
+    <div class="search">
+        <form action="" class="d-flex">
+           <input type="search" class="form-control me-2" placeholder="Пошук">
+       </form>
+       <button class="btn btn-outline-success" type="submit">Search</button>
+   </div>
+
+</header>
+
+{% endblock %}
+

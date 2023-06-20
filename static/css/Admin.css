@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.decElem
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.burger-menu__btn_Admin
+{
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    z-index: 40;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4b4b4ba9;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.burger-menu__btn_Admin:hover .burger-menu__lines_Admin
+{
+    filter: brightness(0.7);
+}
+
+.burger-menu__lines_Admin,
+.burger-menu__lines_Admin::after,
+.burger-menu__lines_Admin::before
+{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: rgb(31, 31, 31);
+}
+
+.burger-menu__lines_Admin
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines_Admin::before
+{
+    content: '';
+    top: -9px;
+}
+
+.burger-menu__lines_Admin::after
+{
+    content: '';
+    top: 9px;
+}
+
+.burger-menu__active_Admin .burger-menu__btn_Admin,
+.burger-menu__active_Admin .burger-menu__lines_Admin
+{
+    background-color: transparent;
+}
+
+.burger-menu__active_Admin .burger-menu__lines_Admin::before
+{
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu__active_Admin .burger-menu__lines_Admin::after
+{
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu__nav_Admin
+{
+    padding-top: 80px;
+    position: fixed;
+    z-index: 30;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    background-color: #303030a9;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    overflow-y: auto;
+    width: 15%;
+    left: -100%;
+    transition: 0.5s;
+}
+
+.burger-menu__active_Admin .burger-menu__nav_Admin
+{
+    left: 0;
+}
+
+.burger-menu__link_Admin
+{
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppeercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.burger-menu__link_Admin:hover
+{
+    filter: brightness(0.7); 
+}
+
+div.burger-menu_Admin
+{
+    display: grid;
+}
+
+.burger-menu__nav_Admin, .burger-menu__btn_Admin
+{
+    display: block;
+}
+
+.Menu_Admin{
+    display: grid;
+    margin-right: 0%;
+    margin-left: 0px;
+    padding: 0%;    
+}
+   
+.menuLI_Admin
+{
+    grid-column: 1/2;
+    list-style: none;
+    padding: 1em;
+    font-size: 16px;
+}
+
+.menuLI_Admin:hover
+{
+    width: 100%;
+    font-size: 16px;
+    background-color: rgba(0, 238, 255, 0.459);
+    animation-name: bachroundMenu;
+    animation-duration: 1s;
+}
+
+.search
+{
+    display: none;
+}
+
+.d-flex
+{
+    display: none;
+}
+
+.btn
+{
+    display: none;
+}
+
+@keyframes bachroundMenu
+{
+    0%{
+        background-color: #ffffff00;
+    }
+
+    100%{
+        background-color: rgba(0, 238, 255, 0.459);
+    }
+}
+
+.subMain0, .subMain1, .subMain2, .subMain3, .subMain4,  .subMain6, .subMain7
+{
+    list-style: none;
+    display: none;
+    max-height: auto;
+    position: relative;
+    background-color: rgba(65, 65, 65, 0.966);
+    
+}
+
+.subMain0, .subMain1, .subMain2, .subMain3, .subMain4,  .subMain6, .subMain7 
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+a.textMenu_Admin
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+a.textMenu_Admin:hover
+{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    font-size: 16spx;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+.submit
+{
+    margin-top: 10px;
+    margin-bottom: 100px;
+    font-size: 16px;
+    height: 30px;
+    width: 15%;
+    margin-left: 80%;
+}
+
+.submit:focus
+{
+    animation-name: background-border-change;
+    animation-duration: 200ms, 500ms, 500ms;
+    background-color: rgb(9, 156, 4);
+    border: 2px rgb(4, 126, 0) solid;
+    color: rgb(255, 255, 255);
+    width: 17%;
+    margin-top: 12px;
+}
+
+.submit:hover
+{
+    animation-name: background-border-change;
+    animation-duration: 200ms, 500ms, 500ms;
+    background-color: rgb(9, 156, 4);
+    border: 2px rgb(4, 126, 0) solid;
+    color: rgb(255, 255, 255);
+    width: 17%;
+    margin-top: 12px;
+}
+
+@keyframes background-border-change
+{
+    0%{
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px rgb(0, 255, 0) solid;
+        color: rgb(0, 255, 0);
+        width: 15%;
+        margin-top: 12px;
+    }
+
+    100%{
+        background-color: rgb(9, 156, 4);
+        border: 2px rgb(4, 126, 0) solid;
+        color: rgb(255, 255, 255);
+        width: 17%;
+        animation-delay: 5s;
+    }
+}
+
+.contents, .contents_1
+{
+    display: grid;
+    align-items: center;
+    z-index: 30;
+    margin-top: 5px;
+    border-radius: 10px;
+    height: auto;
+    width: 80%;
+    margin-left: 16%;
+    grid-template-columns: 1fr;
+    background-color: #4b4b4ba9;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.contents_1
+{
+    height: 500px;
+}
+
+.imgUser
+{
+    display: grid;
+    width: 240px;
+    height: 240px;
+
+}
+
+.imAdmin
+{
+    display: grid;
+    margin-top: 10px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    height: 240px;
+    background-color: rgba(255, 255, 255, 0.295);
+    border:rgba(65, 65, 65, 0.966) solid 3px;
+    border-radius: 50%;
+}
+
+.nameAdmin
+{
+    display: grid;
+    align-items: top;
+    justify-items: center;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+@media (min-width: 240px) and (max-width: 1300px)
+{
+    .burger-menu__nav_Admin{
+        width: 20%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 1100px)
+{
+    .burger-menu__nav_Admin{
+        width: 30%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 800px)
+{
+    .burger-menu__nav_Admin{
+        width: 40%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 700px)
+{
+    .burger-menu__nav_Admin{
+        width: 50%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 550px)
+{
+    .burger-menu__nav_Admin{
+        width: 70%;
+    }
+}
+
+@media (min-width: 240px) and (max-width: 400px)
+{
+    .burger-menu__nav_Admin{
+        width: 80%;
+    }
+}

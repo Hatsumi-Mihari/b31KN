@@ -1,0 +1,14 @@
+{% extends "patern.html" %}
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/startpage.css') }}"> 
+{% endblock %}
+
+{% block title %}
+Новини
+{% endblock %}
+{% block article %}
+<center><h1 class="titleaArt">Новини</h1></center>
+<div class="content">
+    {{ blocks|safe }}
+</div>
+{% endblock %}

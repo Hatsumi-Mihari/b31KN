@@ -1,0 +1,173 @@
+.contents {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ListID {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.5fr 15px 1fr;
+  grid-template-columns: 0.5fr 1fr;
+  width: 95%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  justify-items: end;
+  grid-column-gap: 15px;
+}
+
+.formIntp {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.btn1 {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.Save {
+  display: -ms-grid;
+  display: grid;
+  background-color: rgba(255, 255, 255, 0);
+  color: #00ff00;
+  height: 40px;
+  width: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  font-size: 1.2em;
+  border: 1px #00ff00 solid;
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.Save:hover {
+  color: #ffffff;
+  background-color: #00ae00;
+  border: 1px #00ae00 solid;
+}
+
+.AllArticleTable {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+.date {
+  display: -ms-grid;
+  display: grid;
+  width: 95%;
+  -ms-grid-columns: 0.2fr 1fr;
+  grid-template-columns: 0.2fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.idArt, .nameArt {
+  display: -ms-grid;
+  display: grid;
+  border-left: 3px #d5d5d5 solid;
+  border-right: 3px #d5d5d5 solid;
+  width: 100%;
+  height: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.idArt {
+  border-right: 0px #e7e7e700 solid;
+}
+
+#d {
+  background-color: #60a3ff;
+}
+
+.d1 {
+  background-color: rgba(173, 173, 173, 0.81);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.d1:hover {
+  background-color: rgba(221, 221, 221, 0.81);
+  color: #434343;
+  border-color: #545454;
+}
+.d1:hover + .d1 {
+  background-color: rgba(221, 221, 221, 0.81);
+  color: #434343;
+  border-color: #545454;
+}
+
+.d2 {
+  background-color: rgba(173, 173, 173, 0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.d2:hover {
+  background-color: rgba(221, 221, 221, 0.81);
+  color: #434343;
+  border-color: #545454;
+}
+.d2:hover + .d2 {
+  background-color: rgba(221, 221, 221, 0.81);
+  color: #434343;
+  border-color: #545454;
+}
+
+@media (min-width: 190px) and (max-width: 1024px) {
+  .ListID {
+    -ms-grid-columns: 1fr 0.2fr;
+    grid-template-columns: 1fr 0.2fr;
+  }
+
+  .formIntp {
+    display: -ms-grid;
+    display: grid;
+    border-radius: 5px;
+  }
+
+  .date {
+    width: 95%;
+    -ms-grid-columns: 0.4fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1300px) {
+  .ListID {
+    -ms-grid-columns: 1fr 0.4fr;
+    grid-template-columns: 1fr 0.4fr;
+  }
+
+  .formIntp {
+    width: 95%;
+  }
+
+  .date {
+    -ms-grid-columns: 0.4fr 1fr;
+    grid-template-columns: 0.4fr 1fr;
+  }
+}

@@ -1,0 +1,238 @@
+.menuEdiro, .editSubmenu
+{
+    width: 90%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.295);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+
+.editSubmenu{
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+}
+
+.idSub, .idPoint
+{ 
+    background-color: rgba(0, 204, 255, 0.534);  
+}
+
+.idSub > input
+{ 
+    background-color: rgba(106, 174, 190, 0.233);  
+}
+
+.idPoint > input
+{ 
+    background-color: rgba(106, 174, 190, 0.233);  
+}
+
+.idPoint > div
+{ 
+    background-color: rgba(0, 208, 255, 0.233);  
+}
+
+.idSub1
+{ 
+    background-color: rgba(0, 140, 175, 0.534);  
+}
+
+
+.idSub1 > input
+{ 
+    background-color: rgba(0, 140, 175, 0.534);  
+}
+
+
+.inf1
+{
+    display: grid;
+    align-items: top;
+    justify-items: center;
+    color: white;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: rgb(41, 41, 41) solid 2px;
+}
+
+
+.idInfo, .nameInfo, .linkInfo
+{
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+    background-color: rgba(166,166,166,0.7);
+    margin-bottom: 10px;
+    color: white;
+    font-size: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 50px;
+    width: 100%;
+    border: rgb(41, 41, 41) solid 2px;
+}
+
+.idInfo:hover, .nameInfo:hover, .linkInfo:hover
+{
+    background-color: rgba(255,255,255,0.8);
+    color: rgb(0, 0, 0);
+}
+
+
+.idInfo:focus, .nameInfo:focus, .linkInfo:focus
+{
+    background-color: rgba(255,255,255,0.7);
+    color: rgb(0, 0, 0);
+}
+
+
+.create{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.createNewMenu
+{
+    display: grid;
+    outline: none;
+    background-color: initial;
+    font-size: 23px;
+    color: rgb(0, 255, 13);
+    border:rgb(0, 255, 13) solid 4px;
+    grid-column: 1/8;
+}
+
+.createNewMenu:hover
+{
+    background-color: rgb(0, 255, 13);
+    color: rgb(255, 255, 255);
+    border:rgb(0, 255, 13) solid 4px;
+    animation-name: hoverButtonEd;
+    animation-duration: 500ms;
+}
+
+@keyframes hoverButtonEd{
+    0%{
+        background-color: initial;
+        color: rgb(0, 255, 13);
+    }
+
+    100%{
+        background-color: rgb(0, 255, 13); 
+        color: rgb(255, 255, 255);
+    }
+}
+
+.createNewMenu:focus
+{
+    background-color: rgb(0, 199, 10);
+    color: rgb(255, 255, 255);
+    border:rgb(0, 199, 10) solid 4px;
+}
+@media (min-width: 200px) and (max-width: 1260px){
+    .inf1
+    {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 920px)
+{
+    .contents
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .inf1{
+        font-size: 15px;
+    }
+
+    .idInfo, .nameInfo, .linkInfo
+    {
+        height: 40px;
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .inf1
+    {
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 678px)
+{
+    .idInfo, .nameInfo, .linkInfo
+    {
+        height: 35px;
+        width: 100%;
+    }
+
+    .inf1
+    {
+        font-size: 20px;
+    }
+
+    /* .editSubmenu{
+        grid-template-columns: 0.3fr 0.5fr 1fr 1fr;
+    } */
+}
+
+@media (min-width: 200px) and (max-width:490px)
+{
+    .idInfo, .nameInfo, .linkInfo
+    {
+        height: 35px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .inf1
+    {
+        font-size: 18px;
+    }
+
+    /* .editSubmenu{
+        grid-template-columns: 0.3fr 0.5fr 1fr 1fr;
+    } */
+}
+
+@media (min-width: 200px) and (max-width:360px)
+{
+    .idInfo, .nameInfo, .linkInfo
+    {
+        height: 35px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .inf1
+    {
+        font-size: 16px;
+    }
+
+    /* .editSubmenu{
+        grid-template-columns: 0.3fr 0.5fr 1fr 1fr;
+    } */
+}
+
+@media (min-width: 200px) and (max-width:300px)
+{
+    .idInfo, .nameInfo, .linkInfo
+    {
+        height: 35px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .inf1
+    {
+        font-size: 12px;
+    }
+
+    /* .editSubmenu{
+        grid-template-columns: 0.3fr 0.5fr 1fr 1fr;
+    } */
+}
+

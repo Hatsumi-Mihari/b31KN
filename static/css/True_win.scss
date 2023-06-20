@@ -1,0 +1,173 @@
+$backF: #21252952;
+.closeB{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-items: center;
+    z-index: 280;
+    width: 100%;
+    height: 100%;
+}
+.modileWin{
+    display: none;
+    position: absolute;
+    z-index: 290;
+    background-color: $backF;
+    backdrop-filter: blur(4px);
+    width: 50%;
+    height: 20%;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+    margin-top: 0%;
+}
+
+@keyframes downWin{
+    0%{
+        margin-top: 0%;
+        background-color: rgba(0, 255, 255, 0);
+        backdrop-filter: blur(0px);
+    }
+    100%{
+        margin-top: 3%;
+        background-color: $backF;
+        backdrop-filter: blur(4px);
+    }
+}
+
+@keyframes upWin{
+    0%{
+        margin-top: 3%;
+        background-color: $backF;
+        backdrop-filter: blur(4px);
+    }
+    100%{
+        margin-top: 0%;
+        background-color: rgba(0, 255, 255, 0);
+        backdrop-filter: blur(0px);
+    }
+}
+
+.cls{
+    display: grid;
+    width: 100%;
+    align-items: start;
+    justify-items: end;
+    grid-column: 3;
+    .btncls{
+        display: grid;
+        width: 58px;
+        height: 32px;
+        border: 1px solid red;
+        background-color: rgba(0, 0, 0, 0);
+        cursor: pointer;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: red;
+        font-size: 1em;
+        align-items: center;
+        justify-items: center;
+        transition: all 0.5s;
+        &:hover{
+            background-color: rgb(255, 0, 0);
+            color: rgb(242, 242, 242);
+        }
+    }
+}
+
+.inf{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    font-size: 1.3em;
+    grid-column: 1/4;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(242, 242, 242);
+}
+
+.BTN_TRUE_FALSE{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-column: 1fr 1fr; 
+    grid-column: 1/4;
+}
+
+.yesBTH, .NO_BTN{
+    display: grid;
+    width: 80%;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 1.5em;
+    height: 40px;
+   
+    cursor: pointer;
+}
+$greenColor: rgb(0, 255, 0);
+$redColor: rgb(255, 47, 47);
+.yesBTH{
+    grid-column: 1;
+    border: 2px $greenColor solid;
+    color: $greenColor;
+    transition: all 0.5s;
+    a{
+        text-decoration: none;
+        color: $greenColor;
+        transition: all 0.5s;
+        width: 100%;
+
+    }
+    &:hover{
+        color: rgb(255, 255, 255);
+        background-color: $greenColor;
+    }
+
+    &:hover a{
+        color: rgb(255, 255, 255);
+    }
+}
+
+.NO_BTN{
+    grid-column: 2;
+    border: 2px $redColor solid;
+    color: $redColor;
+    transition: all 0.5s;
+    &:hover{
+        color: rgb(255, 255, 255);
+        background-color: $redColor;
+    }
+}
+
+@media (min-width: 200px)and(max-width: 600px){
+    .modileWin{
+        width: 100%;
+        height: 100%;
+        margin-top: -3%;
+    }
+    @keyframes downWin{
+        0%{
+            margin-top: -3%;
+            background-color: rgba(0, 255, 255, 0);
+            backdrop-filter: blur(0px);
+        }
+        100%{
+            margin-top: 0%;
+            background-color: $backF;
+            backdrop-filter: blur(4px);
+        }
+    }
+    
+    @keyframes upWin{
+        0%{
+            margin-top: 0%;
+            background-color: $backF;
+            backdrop-filter: blur(4px);
+        }
+        100%{
+            margin-top: -3%;
+            background-color: rgba(0, 255, 255, 0);
+            backdrop-filter: blur(0px);
+        }
+    }
+}

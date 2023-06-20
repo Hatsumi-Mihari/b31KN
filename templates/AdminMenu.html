@@ -1,0 +1,60 @@
+
+{% block adMenu %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/True_win.css') }}">
+<div class="closeB">
+    <div class="modileWin">
+        <div class="cls">
+            <div class="btncls">
+                close
+            </div>
+        </div>
+        <div class="inf">
+            Будь ласка, перевірте чи зберегли ви всі зміни<br>
+            Please check that you have saved all changes
+        </div>
+        <div class="BTN_TRUE_FALSE">
+            <div class="yesBTH">
+                <a href="/">Yes</a>
+            </div>
+            <div class="NO_BTN">
+                No
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="burger-menu__nav_Admin">
+    <ul class="Menu_Admin">
+        <li class="menuLI_Admin" id='hidenMenu0'><a href="#" class="textMenu_Admin">Повернутися га головну сторінку сайта </a>
+        </li>
+        <li class="menuLI_Admin" id='hidenMenu1'><a href="/userDefinitions/AdminControlPanel/Publish" class="textMenu_Admin">Опублікувати нову статтю</a>
+        </li>
+    
+            <li class="menuLI_Admin" id='hidenMenu2'><a href="/userDefinitions/AdminControlPanel/EditArticle" class="textMenu_Admin">Редагувати існуючі </a>
+            </li>
+    
+            <li class="menuLI_Admin" id='hidenMenu3'><a href="/userDefinitions/AdminControlPanel/PhotoAdd" class="textMenu_Admin">Додати фото в галерею</a>
+            </li>
+
+            <li class="menuLI_Admin" id='hidenMenu5'><a href="/userDefinitions/AdminControlPanel/EditMenu" class="textMenu_Admin">Створити нове меню</a>
+            </li>
+            
+            <li class="menuLI_Admin" id='hidenMenu5'><a href="/userDefinitions/AdminControlPanel/UpdataMenu" class="textMenu_Admin">Редагувати меню і підменю</a>
+            </li>
+
+            <li class="menuLI_Admin" id='hidenMenu6'><a href="/userDefinitions/AdminControlPanel/DeletePub" class="textMenu_Admin">Видалити публикацію</a>
+            </li>
+
+            <li class="menuLI_Admin" id='hidenMenu6'><a href="/userDefinitions/AdminControlPanel/DeletePicture" class="textMenu_Admin">Видалити фото</a>
+            </li>
+
+            <li class="menuLI_Admin" id='hidenMenu6'><a href="/userDefinitions/AdminControlPanel/ADD_NEWS" class="textMenu_Admin">Додати новину</a>
+            </li>
+
+            <li class="menuLI_Admin" id='hidenMenu6'><a href="/userDefinitions/AdminControlPanel/EDIT_NEWS" class="textMenu_Admin">Редагувати опубліковані новини</a>
+            </li>
+           
+            <li class="menuLI_Admin" id='hidenMenu6'><a href="/userDefinitions/AdminControlPanel" class="textMenu_Admin">Повернутися на головну</a>
+            </li>
+        </ul>   
+</nav>
+{% endblock %}

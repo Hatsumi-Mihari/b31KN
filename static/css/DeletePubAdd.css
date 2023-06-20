@@ -1,0 +1,29 @@
+.date {
+  -ms-grid-columns: 0.5fr 0.3fr 1fr;
+  grid-template-columns: 0.5fr 0.3fr 1fr;
+}
+
+.miniPicture {
+  display: -ms-grid;
+  display: grid;
+  width: 52px;
+  height: 51px;
+  background-color: aqua;
+  overflow: hidden;
+}
+
+.d1, .d2 {
+  height: 60px;
+}
+
+@media (min-width: 290px) and (max-width: 800px) {
+  .nameArt {
+    overflow: scroll;
+    font-size: 0.8em;
+  }
+
+  .date {
+    -ms-grid-columns: 0.5fr 0.5fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+}
